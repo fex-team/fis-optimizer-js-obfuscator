@@ -1,0 +1,7 @@
+/node_modules
+.awcache
+.DS_Store
+.idea
+npm-debug.log
+*.js.map
+package-lock.json

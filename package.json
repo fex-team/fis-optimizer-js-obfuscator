@@ -1,0 +1,28 @@
+{
+  "name": "fis-optimizer-js-obfuscator",
+  "version": "0.0.1",
+  "description": "JavaScript obfuscator for fis",
+  "keywords": [
+    "obfuscator",
+    "obfuscation",
+    "uglify",
+    "crush",
+    "code protection",
+    "javascript obfuscator",
+    "js obfuscator",
+    "fis optimizer"
+  ],
+  "author": "FIS Team <fis@baidu.com>",
+  "homepage": "http://fis.baidu.com/",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fex-team/fis-optimizer-js-obfuscator"
+  },
+  "dependencies": {
+    "javascript-obfuscator": "0.18.1"
+  }
+}
