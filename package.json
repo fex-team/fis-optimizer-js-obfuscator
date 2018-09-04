@@ -1,6 +1,6 @@
 {
   "name": "fis-optimizer-js-obfuscator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JavaScript obfuscator for fis",
   "keywords": [
     "obfuscator",

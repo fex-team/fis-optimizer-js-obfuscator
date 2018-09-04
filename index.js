@@ -6,7 +6,6 @@
 var JavaScriptObfuscator = require('javascript-obfuscator');
 
 module.exports = function(content, file, conf) {
-  console.log(conf);
   if (conf.obfuscatorLeval) {
     if (conf.obfuscatorLeval === 'high') {  // High obfuscation, low performance
       conf = {
