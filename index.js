@@ -85,7 +85,7 @@ module.exports = function (content, file, conf) {
     var obfuscationResult = JavaScriptObfuscator.obfuscate(content, conf);
     content = obfuscationResult.getObfuscatedCode();
   } catch (e) {
-    fis.log.warning(
+    fis.log.error(
       "Got Error " + e.message + " while obfuscator " + file.subpath
     );
     fis.log.debug(e.stack);
