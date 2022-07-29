@@ -1,6 +1,6 @@
 {
   "name": "fis-optimizer-js-obfuscator",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "description": "JavaScript obfuscator for fis",
   "keywords": [
     "obfuscator",
@@ -23,6 +23,6 @@
     "url": "https://github.com/fex-team/fis-optimizer-js-obfuscator"
   },
   "dependencies": {
-    "javascript-obfuscator": "1.12.0"
+    "javascript-obfuscator": "3.0.0"
   }
 }
