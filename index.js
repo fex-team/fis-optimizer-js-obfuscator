@@ -3,11 +3,11 @@
  * @author jun_zhang2011@qq.com
  */
 
-var JavaScriptObfuscator = require("javascript-obfuscator");
+var JavaScriptObfuscator = require('javascript-obfuscator');
 
 module.exports = function (content, file, conf) {
   if (conf.obfuscatorLeval) {
-    if (conf.obfuscatorLeval === "high") {
+    if (conf.obfuscatorLeval === 'high') {
       // High obfuscation, low performance
       conf = Object.assign(
         {
@@ -19,20 +19,20 @@ module.exports = function (content, file, conf) {
           debugProtection: true,
           debugProtectionInterval: true,
           disableConsoleOutput: true,
-          identifierNamesGenerator: "hexadecimal",
+          identifierNamesGenerator: 'hexadecimal',
           log: false,
           renameGlobals: false,
           rotateStringArray: true,
           selfDefending: true,
           stringArray: true,
-          stringArrayEncoding: "rc4",
+          stringArrayEncoding: 'rc4',
           stringArrayThreshold: 1,
           transformObjectKeys: true,
-          unicodeEscapeSequence: false,
+          unicodeEscapeSequence: false
         },
         conf
       );
-    } else if (conf.obfuscatorLeval === "medium") {
+    } else if (conf.obfuscatorLeval === 'medium') {
       // Medium obfuscation, optimal performance
       conf = Object.assign(
         {
@@ -44,20 +44,20 @@ module.exports = function (content, file, conf) {
           debugProtection: false,
           debugProtectionInterval: false,
           disableConsoleOutput: true,
-          identifierNamesGenerator: "hexadecimal",
+          identifierNamesGenerator: 'hexadecimal',
           log: false,
           renameGlobals: false,
           rotateStringArray: true,
           selfDefending: true,
           stringArray: true,
-          stringArrayEncoding: "base64",
+          stringArrayEncoding: 'base64',
           stringArrayThreshold: 0.75,
           transformObjectKeys: true,
-          unicodeEscapeSequence: false,
+          unicodeEscapeSequence: false
         },
         conf
       );
-    } else if (conf.obfuscatorLeval === "low") {
+    } else if (conf.obfuscatorLeval === 'low') {
       // Low obfuscation, High performance
       conf = Object.assign(
         {
@@ -67,7 +67,7 @@ module.exports = function (content, file, conf) {
           debugProtection: false,
           debugProtectionInterval: false,
           disableConsoleOutput: true,
-          identifierNamesGenerator: "hexadecimal",
+          identifierNamesGenerator: 'hexadecimal',
           log: false,
           renameGlobals: false,
           rotateStringArray: true,
@@ -75,7 +75,7 @@ module.exports = function (content, file, conf) {
           stringArray: true,
           stringArrayEncoding: false,
           stringArrayThreshold: 0.75,
-          unicodeEscapeSequence: false,
+          unicodeEscapeSequence: false
         },
         conf
       );
@@ -86,7 +86,7 @@ module.exports = function (content, file, conf) {
     content = obfuscationResult.getObfuscatedCode();
   } catch (e) {
     fis.log.error(
-      "Got Error " + e.message + " while obfuscator " + file.subpath
+      'Got Error ' + e.message + ' while obfuscator ' + file.subpath
     );
     fis.log.debug(e.stack);
   }
